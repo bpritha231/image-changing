@@ -1,0 +1,104 @@
+*{
+ padding: 0;
+ margin: 0;
+}
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #fdfdfd, #f4f9ff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      padding-top: 50px;
+    }
+
+    /* Input box section */
+    .sec1 {
+      background-color: white;
+      border: 2px solid #00adb5;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      padding: 25px 30px;
+      width: 400px;
+      text-align: center;
+      margin-bottom: 40px;
+      transition: transform 0.3s;
+    }
+
+    .sec1:hover {
+      transform: scale(1.02);
+    }
+
+    .sec1 label {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .sec1 input {
+      width: 250px;
+      height: 28px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 5px 10px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .sec1 input:focus {
+      border-color: #00adb5;
+      box-shadow: 0 0 5px #00adb5;
+    }
+
+    .sec1 button {
+      background-color: #00adb5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .sec1 button:hover {
+      background-color: #008891;
+    }
+
+    /* Display Section */
+    .output {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      padding: 30px;
+      width: 350px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .output:hover {
+      transform: scale(1.03);
+    }
+
+    .output img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00adb5;
+      margin-bottom: 15px;
+    }
+
+    .output h1 {
+      font-size: 22px;
+      margin: 5px 0;
+      color: #222;
+    }
+
+    .output h2 {
+      font-size: 16px;
+      color: #555;
+      font-weight: 400;
+    }

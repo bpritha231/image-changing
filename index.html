@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Input Section -->
+  <div class="sec1">
+    <label for="name">NAME:</label><br>
+    <input type="text" placeholder="Enter your Name" id="name"><br><br>
+
+    <label for="source">IMAGE:</label><br>
+    <input type="text" placeholder="Enter image URL" id="source"><br><br>
+
+    <label for="bio">BIO:</label><br>
+    <input type="text" placeholder="Enter bio" id="bio"><br><br>
+
+    <button onclick="updateBio()"><b>Submit</b></button>
+  </div>
+
+  <!-- Display Section -->
+  <div class="output">
+    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" id="src" alt="Profile Image">
+    <h1 id="h1">Your Name</h1>
+    <h2 id="h2">Your Bio</h2>
+  </div>
+
+  <script>
+    function updateBio() {
+      let Name = document.getElementById("name").value;
+      let img = document.getElementById("source").value;
+      let Bio = document.getElementById("bio").value;
+
+      document.getElementById('h1').innerHTML = Name;
+      document.getElementById('src').src = img;
+      document.getElementById('h2').innerHTML = Bio;
+    }
+  </script>
+</body>
+</html>
